@@ -58,5 +58,5 @@ app.get("/api/send-mail", (req, res) => {
   res.send("✅ This route works only with POST request");
 });
 app.listen(5000, () => {
-  console.log("✅ Backend running on http://localhost:5000");
+  console.log(`✅ Backend running on port ${PORT}`);
 });

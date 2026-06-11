@@ -17,7 +17,7 @@ mailForm.addEventListener("submit", async (e) => {
     try {
         result.innerText = "⏳ Sending mails...";
 
-        const response = await fetch("http://localhost:5000/api/send-mail", {
+        const response = await fetch("https://mass-mail-dispatcher-3e1y.onrender.com/api/send-mail", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ emails, subject, message })
